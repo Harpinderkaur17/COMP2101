@@ -43,7 +43,7 @@ then
 fi
 if [ $doa -eq 3 ];
 then
-	title="Master"
+	title="princess"
 fi
 if [ $doa -eq 4 ];
 then
