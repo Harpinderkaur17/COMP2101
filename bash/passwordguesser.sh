@@ -13,7 +13,7 @@
 #task 1 user input fr password
 read -p "Enter Password (1/5):" myString
 referenceString="password"
-# Task 2 Changed to if else condition
+# Task 2: Changed to if else condition
 #Task 3: used if else combinations to give user 5 tries
 if [ $myString = $referenceString ];
 then
