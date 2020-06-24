@@ -78,7 +78,7 @@
 #Task 2 : added router in /etc/hosts getting using default router value
 RouterIP=$(ip r | grep "default" | awk '{print $3}')
 RouterName=$(getent hosts $RouterIP | awk '{print $2}' )
-#Task 1: Splitted the command between commands to different variables 
+#Task 1: Splitted the command between commands to different variables
 Hostname=$(hostname)
 partial=$(ip a |awk '/: e/{gsub(/:/,"");print $2}')
 LANAddress=$(ip a s $partial|awk '/inet /{gsub(/\/.*/,"");print $2}')
@@ -96,4 +96,3 @@ External Name   : $ExternalName
 Router IP       : $RouterIP
 Router Name     : $RouterName
 EOF
-

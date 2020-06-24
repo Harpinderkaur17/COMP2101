@@ -11,16 +11,16 @@
 
 #myString="TestString"
 #task 1 user input fr password
-read -p "Enter Password (1/5):" myString 
+read -p "Enter Password (1/5):" myString
 referenceString="password"
 # Task 2 Changed to if else condition
 #Task 3: used if else combinations to give user 5 tries
 if [ $myString = $referenceString ];
 then
-	echo "You got it right!" 
+	echo "You got it right!"
 else
 	echo "You got it wrong!"
-        read -p "Enter Password (2/5):" myString	
+        read -p "Enter Password (2/5):" myString
 	if [ $myString = $referenceString ];
 then
         echo "You got it right!"
