@@ -31,15 +31,15 @@ doa=$(date +%w)
 
 if [ $doa -eq 0 ];
 then
-	title="Great"
+	title="love"
 fi
 if [ $doa -eq 1 ];
 then
-	title="Overlord"
+	title="hot"
 fi
 if [ $doa -eq 2 ];
 then
-	title="Ranger"
+	title="sweet"
 fi
 if [ $doa -eq 3 ];
 then
@@ -51,11 +51,11 @@ then
 fi
 if [ $doa -eq 5 ];
 then
-	title="Majesty"
+	title="cool"
 fi
 if [ $doa -eq 6 ];
 then
-	title="Handsome"
+	title="kutta"
 fi
 ###############
 # Main        #
