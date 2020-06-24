@@ -10,10 +10,10 @@
 #           *** Do not use the exit command, and do not use a loop (e.g. while or for)
 
 #myString="TestString"
-#task 1 user input fr password
+#task 1: user input for password
 read -p "Enter Password (1/5):" myString 
 referenceString="password"
-# Task 2 Changed to if else condition
+# Task 2: Changed to if else condition
 #Task 3: used if else combinations to give user 5 tries
 if [ $myString = $referenceString ];
 then
