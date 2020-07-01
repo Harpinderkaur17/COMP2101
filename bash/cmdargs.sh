@@ -25,8 +25,8 @@ while [ $# -gt 0 ]; do
 # Anything that wasn't recognized on the command line should still go into the myargs array
 
 # used case statement to recognise options
-case $1 in 
-	-h)
+case $1 in
+	-h)ss
 	echo "Help"
         echo "You can use -h for help, -v for verbose and -d {0-9} for debug mode with single digit level"
 exit
@@ -48,14 +48,14 @@ exit
 	       debugMode=on
 	       # settin level to 2nd argument
 
-       	       level=$2	    
-	       # shifting 
-	   echo "Provide -d with a single digit number, use -h for help"  
+       	       level=$2
+	       # shifting
+	   echo "Provide -d with a single digit number, use -h for help"
 	fi
 		;;
 	*)
-		# for all other options 
-		echo "Command argument Un-recognized  : $1" 
+		# for all other options
+		echo "Command argument Un-recognized  : $1"
 esac
 
 
@@ -80,6 +80,6 @@ if [[ $level -eq 0 ]];
 then
 	echo "Debug Mode is $debugMode"
 else
-	echo "Debug Mode is $debugMode at Level $level" 
+	echo "Debug Mode is $debugMode at Level $level"
 fi
-echo "myargs = ${myargs[@]}" 
+echo "myargs = ${myargs[@]}"

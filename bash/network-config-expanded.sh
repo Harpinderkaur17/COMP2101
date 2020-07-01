@@ -14,7 +14,7 @@
 
 # TASK 1: Dynamically identify the list of interface names for the computer running the script, and use a for loop to generate the report for every interface except loopback
 
-# using nmcli device getting all nterfaces and using awk got their names  using grep avoided lo interface and fist line  : DEVICE 
+# using nmcli device getting all nterfaces and using awk got their names  using grep avoided lo interface and fist line  : DEVICE
 interface_names=$(nmcli device | awk '{print $1}' | grep -P "^[^(DEVICE|lo)].*$")
 
 ################
