@@ -43,7 +43,7 @@ exit
 	if [ ! -z "$2" ] && [ $2 -gt 0 ] && [ $2 -lt 10 ];
       	then
 		echo "Turniing on Debug mode at $2 Level"
-		# turing debugMode on
+		# turning debugMode on
 
 	       debugMode=on
 	       # settin level to 2nd argument
