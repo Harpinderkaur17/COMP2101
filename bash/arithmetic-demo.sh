@@ -7,27 +7,14 @@
 #    the sum of the 3 numbers with a label
 #    the product of the 3 numbers with a label
 
-#firstnum=5
-#secondnum=2
-#user inputs
-echo "First number" 
-read firstnum
-echo "Second number" 
-read secondnum
-echo "Third number"
-read thirdnum
+firstnum=5
+secondnum=2
+sum=$((firstnum + secondnum))
+dividend=$((firstnum / secondnum))
+fpdividend=$(awk "BEGIN{printf \"%.2f\", $firstnum/$secondnum}")
 
-# calculation of sum of three numers
-sum=$((firstnum + secondnum+thirdnum))
-#dividend=$((firstnum / secondnum))
-#fpdividend=$(awk "BEGIN{printf \"%.2f\", $firstnum/$secondnum}")
-# calculation of product of three numbers 
-product=$((firstnum * secondnum * thirdnum))
-#printing output only sum and product off three numbers
 cat <<EOF
-
-SUM
-$firstnum plus $secondnum plus $thirdnum is $sum
-PRODUCT
-$firstnum multiply by $secondnum multiply by $thirdnum is $product
+$firstnum plus $secondnum is $sum
+$firstnum divided by $secondnum is $dividend
+  - More precisely, it is $fpdividend
 EOF

@@ -26,7 +26,7 @@ while [ $# -gt 0 ]; do
 
 # used case statement to recognise options
 case $1 in
-	-h)ss
+	-h)
 	echo "Help"
         echo "You can use -h for help, -v for verbose and -d {0-9} for debug mode with single digit level"
 exit
